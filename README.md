@@ -63,7 +63,7 @@ Add `biocite-mcp` to your MCP host configuration (e.g., `claude_desktop_config.j
 
 1. **Search**: "Find recent papers about DREB2A drought stress in tomato."
 2. **Resolve**: "Format the citation for DOI 10.1093/jxb/erx393 in Nature style."
-3. **Analyze**: "Audit this manuscript draft for citation accuracy: [Your Text Here]" (Alternatively, for analyzing a manuscript, you can use Claude’s “file_system” module to scan for citations in 'specific files you point to the LLM')
+3. **Analyze**: "Audit this manuscript draft for citation accuracy: [Your Text Here]" *(Pro-tip: Use Claude's Filesystem MCP to read your manuscript file and pipe the content directly into this tool!)*
 4. **Export**: "Give me the BibTeX for 10.1111/j.1365-313X.2006.02701.x"
 
 ---
