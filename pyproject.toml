@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biocite-mcp"
+version = "0.1.0"
+description = "FastMCP server for verified academic citations via Europe PMC and Crossref"
+readme = "README.md"
+authors = [
+    { name = "ZaEyAsa" }
+]
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["mcp", "fastmcp", "academic", "citation", "biology", "science", "europepmc", "crossref"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "mcp",
+    "requests",
+    "rapidfuzz",
+]
+
+[project.urls]
+Homepage = "https://github.com/ZaEyAsa/biocite-mcp"
+Repository = "https://github.com/ZaEyAsa/biocite-mcp"
+Issues = "https://github.com/ZaEyAsa/biocite-mcp/issues"
+
+[project.scripts]
+biocite-mcp = "biocite_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
