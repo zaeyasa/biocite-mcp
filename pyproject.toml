@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "biocite-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "FastMCP server for verified academic citations via Europe PMC and Crossref"
 readme = "README.md"
 authors = [
